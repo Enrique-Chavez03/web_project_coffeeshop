@@ -8,7 +8,7 @@ body {
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -178,10 +178,11 @@ body {
 }
 
 /* Reset básico */
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+   }
 
 /* Sección */
 .reservation {
@@ -191,7 +192,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  padding: 100px 20px;
+  padding: 100px 0px;
 
   display: flex;
   flex-direction: column;
@@ -200,8 +201,11 @@ body {
 
 /* Título */
 .reservation__title {
-  margin-bottom: 80px;
+  margin: 0 0 80px;
+  font-weight: 500;
   font-size: 32px;
+  line-height: 1.15;
+  text-align: center;
 }
 
 /* Formulario */
