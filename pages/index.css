@@ -176,3 +176,155 @@ body {
   line-height: 20px;
   color: #fff;
 }
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+/* Sección */
+.reservation {
+  background-color: #D9E7FF;
+  background-image: url("./images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.reservation__title {
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+/* Formulario */
+.reservation__form {
+  width: 100%;
+  max-width: 385px;
+}
+
+/* Fieldset */
+.form__fieldset {
+  border: none;
+}
+
+/* Labels */
+.form__label {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.form__input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botón */
+.form__button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2F80ED;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+/* Checkbox */
+.form__label_type_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* =================== */
+/* MOBILE (hasta 480px) */
+/* ================== */
+
+@media (max-width: 480px;) {
+  .reservation {
+    padding: 60px 16px;
+  }
+
+  .reservation__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .form__label{
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+
+  .form__input {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .form__button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* ============= */
+/* Tablet (481px - 780px) */
+/* ============ */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .reservation {
+    padding: 80px; 20px;
+  }
+
+  .reservation__title {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .reservation__form {
+    max-width: 420px;
+  }
+}
+
+/* ============== */
+/* Escritorio o laptop Grande (1200px+) */
+/* ============== */
+
+@media (min-width: 1200px) {
+  .reservation {
+    padding: 120px; 20px;
+  }
+
+  .reservation__title {
+    font-size: 36px;
+  }
+}
