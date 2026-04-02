@@ -1,330 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .header {
-  min-height: 720px;
-  max-height: 800px;
   height: 100vh;
-  background-color: #FFFFFF;
-  background-image: url('images/background_header.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url('images/background_header.svg') center/cover no-repeat;
+  padding: 30px 80px;
   position: relative;
-  padding: 30px 80px 40px;
-  box-sizing: border-box;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.nav_logo {
+.nav__logo {
   width: 100px;
-  height: auto;
-  position: relative;
-  left: -20px;
 }
 
 .nav__links {
   display: flex;
-  column-gap: 20px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  gap: 20px;
+  list-style: none;
 }
 
 .nav__link {
   text-decoration: none;
-  color: #000;
-}
-
-.nav__link:hover {
-  color: #2F80ED;
+  color: black;
 }
 
 .header__title {
-  max-width: 500px;
-  margin: 80px 0 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
   font-size: 58px;
-  line-height: 72px;
-  letter-spacing: -1px;
+  margin-top: 80px;
 }
 
 .header__span-accent {
-  display: block;
-  font-family: "Noto Serif", serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
   color: #2F80ED;
+  font-style: italic;
 }
 
 .header__description {
-  max-width: 438px;
-  margin: 28px 0 0;
-  font-family: "Noto Serif", serif;
-  font-size: 20px;
-  line-height: 30px;
+  margin-top: 20px;
 }
 
 .header__image {
   position: absolute;
-  top: 135px;
   right: 30px;
-  max-width: 550px;
-  z-index: 1;
+  top: 120px;
+  width: 400px;
 }
 
 .header__footer {
   position: absolute;
   bottom: 40px;
   left: 80px;
-  width: calc(100% - 160px);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #838383;
 }
 
-.header_paragraph {
-  margin: 0;
+.header__paragraph {
+  margin-bottom: 5px;
 }
 
-.header_address {
-  margin-left: auto;
+.header__address {
+  font-weight: bold;
 }
 
 .recipes {
-  background-color: #0a2750;
-  background-image: url('images/background_recipes.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 100px 80px 215px;
-  color: #fff;
+  background: #0a2750;
+  color: white;
+  padding: 100px 80px;
 }
 
-.recipes_title {
-  max-width: 500px;
-  margin: 0 0 24px 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+.recipes__title {
   font-size: 44px;
-  line-height: 52px;
 }
 
-.recipes_subtitle {
-  max-width: 438px;
-  margin: 0 0 80px 0;
-  font-family: "Noto Serif", serif;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.recipes_videos {
+.recipes__videos {
   display: flex;
-  justify-content: center;
-  gap: 100px;
-  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.recipes_video-item {
-  max-width: 480px;
+.recipes__iframe {
+  width: 400px;
+  height: 220px;
 }
 
-.recipes_iframe {
-  width: 480px;
-  height: 273px;
-  border: none;
-}
-
-.recipes_video-caption {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 24px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #fff;
-}
-
-/* Reset básico */
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-   }
-
-/* Sección */
 .reservation {
-  background-color: #D9E7FF;
-  background-image: url("./images/background_reservation.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  padding: 100px 0px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Título */
-.reservation__title {
-  padding: 100px 0 0;
-  margin: 0 auto 80px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
+  background: #D9E7FF;
+  padding: 100px;
   text-align: center;
 }
 
-/* Formulario */
 .reservation__form {
-  width: 100%;
-  max-width: 385px;
+  max-width: 400px;
+  margin: auto;
 }
 
-/* Fieldset */
-.form__fieldset {
-  border: none;
-}
-
-/* Labels */
 .form__label {
   display: block;
-  margin-bottom: 32px;
-  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-/* Inputs */
 .form__input {
-  display: block;
   width: 100%;
-  margin-top: 8px;
-  padding: 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  padding: 10px;
 }
 
-/* Botón */
 .form__button {
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 32px;
-  padding: 15px;
-  border: none;
-  border-radius: 4px;
-  background-color: #2F80ED;
+  padding: 12px;
+  background: #2F80ED;
   color: white;
-  font-size: 16px;
+  border: none;
   cursor: pointer;
-  transition: opacity 0.3s ease;
 }
 
-.form__button:hover {
-  opacity: 0.7;
-}
-
-/* Checkbox */
-.form__label_type_checkbox {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 14px;
-}
-
-.form__checkbox {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-/* =================== */
-/* MOBILE (hasta 480px) */
-/* ================== */
-
-@media (max-width: 480px;) {
-  .reservation {
-    padding: 60px 16px;
-  }
-
-  .reservation__title {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-
-  .form__label{
-    margin-bottom: 24px;
-    font-size: 13px;
-  }
-
-  .form__input {
-    padding: 12px;
-    font-size: 13px;
-  }
-
-  .form__button {
-    padding: 12px;
-    font-size: 14px;
-  }
-}
-
-/* ============= */
-/* Tablet (481px - 780px) */
-/* ============ */
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .reservation {
-    padding: 80px; 20px;
-  }
-
-  .reservation__title {
-    font-size: 28px;
-    margin-bottom: 60px;
-  }
-
-  .reservation__form {
-    max-width: 420px;
-  }
-}
-
-/* ============== */
-/* Escritorio o laptop Grande (1200px+) */
-/* ============== */
-
-@media (min-width: 1200px) {
-  .reservation {
-    padding: 120px; 20px;
-  }
-
-  .reservation__title {
-    font-size: 36px;
-  }
+.footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 40px;
 }
