@@ -1,52 +1,15 @@
+@import url("../vendor/normalize.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/nav.css");
+@import url("../blocks/recipes.css");
+@import url("../blocks/reservation.css");
+@import url("../blocks/footer.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* .page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-} */
- @import url("../vendor/normalize.css/");
- @import url("../blocks/page.css");
-
-/* .header {
-  height: 100vh;
-  background: url('images/background_header.svg') center/cover no-repeat;
-  padding: 30px 80px;
-  position: relative;
-} */
-
-@import url("../blocks/header.css");
-
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-} */
-
-@import url("../blocks/nav.css");
-
-.nav__logo {
-  width: 100px;
-}
-
-.nav__links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: black;
 }
 
 .header__title {
@@ -84,14 +47,6 @@
   font-weight: bold;
 }
 
-/* .recipes {
-  background: #0a2750;
-  color: white;
-  padding: 100px 80px;
-} */
-
-@import url("../blocks/recipes.css");
-
 .recipes__title {
   font-size: 44px;
 }
@@ -106,14 +61,6 @@
   width: 400px;
   height: 220px;
 }
-
-/* .reservation {
-  background: #D9E7FF;
-  padding: 100px;
-  text-align: center;
-} */
-
-@import url("../blocks/reservation.css");
 
 .reservation__title {
   margin: 0 auto 80px;
@@ -151,18 +98,6 @@
   cursor: pointer;
 }
 
-/* .footer {
-  background-color: #0a2850;
-  position: relative;
-  z-index: 1;
-  padding: 60px 80px 60px 80px;
-  color: white;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  overflow: hidden;
-} */
-
-@import url("../blocks/footer.css");
-
 .footer__content {
 display: flex;
 justify-content: space-between;
@@ -191,7 +126,7 @@ z-index: 2;
   left: 20px;
 }
 
-.foo__social {
+.footer__social {
   text-align: right;
 }
 
