@@ -1,0 +1,9 @@
+.footer {
+  background-color: #0a2850;
+  position: relative;
+  z-index: 1;
+  padding: 60px 80px 60px 80px;
+  color: white;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
