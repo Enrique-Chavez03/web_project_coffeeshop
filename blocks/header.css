@@ -4,3 +4,38 @@
   padding: 30px 80px;
   position: relative;
 }
+
+.header__title {
+  font-size: 58px;
+  margin-top: 80px;
+}
+
+.header__span-accent {
+  color: #2F80ED;
+  font-style: italic;
+}
+
+.header__description {
+  margin-top: 20px;
+}
+
+.header__image {
+  position: absolute;
+  right: 30px;
+  top: 120px;
+  width: 400px;
+}
+
+.header__footer {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+.header__paragraph {
+  margin-bottom: 5px;
+}
+
+.header__address {
+  font-weight: bold;
+}
