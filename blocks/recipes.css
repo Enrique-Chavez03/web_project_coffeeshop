@@ -10,11 +10,29 @@
 
 .recipes__videos {
   display: flex;
+  justify-content: center;
   gap: 40px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .recipes__iframe {
-  width: 400px;
-  height: 220px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1px;
+}
+
+.recipes__video-item {
+  flex: 1;
+  min-width: 280px;
+  max-width: 560px;
 }
